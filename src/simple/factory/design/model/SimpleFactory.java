@@ -10,7 +10,7 @@ public class SimpleFactory {
 //		}else {
 //			return null;
 //		}
-		
+		//这种方式需要传入类全名
 		Class forName = Class.forName(type);
 		return (Fruite)forName.newInstance();
 	}
